@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ROBO-NEWS</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="assets/favicon.ico">
+	
+</head>
+<body>
+
+	<nav>
+		<div class="main-nav container flex">
+			<a href="#">
+				<img src="assets/logo.png" alt="ROBO-NEWS" class="logo">
+			</a>
+			<div class="nav-links">
+				<ul class="flex">
+					<li class="hover-link nav-items" id="Robotics Advances" onclick=" onNavItemClick('Robotics Advances')">Robotics Advances</li>
+					<li class="hover-link nav-items" id="AI and Robotics" onclick=" onNavItemClick('AI and Robotics')">AI and Robotics</li>
+					<!--<li class="hover-link nav-items">Drone Technology</li>-->
+					<li class="hover-link nav-items" id="Space Robotics" onclick=" onNavItemClick('Space Robotics')">Space Robotics</li>
+					<li class="hover-link nav-items" id="Research and Development" onclick=" onNavItemClick('Research and Development')">Research and Development</li>
+					<li class="hover-link nav-items" id="Startup and Innovations" onclick=" onNavItemClick('Startup and Innovations')">Startup and Innovations</li>
+					<li class="hover-link nav-items" id="Security and Defense" onclick=" onNavItemClick('Security and Defense')">Security and Defense</li>
+					<li class="hover-link nav-items" id="Healthcare Robotics" onclick=" onNavItemClick('Healthcare Robotics')">Healthcare Robotics</li>
+				</ul>
+				
+			</div>
+			<div class="search-bar flex">
+				<input type="text" class="news-input" placeholder="Latest News" id="search-text">
+				<button class="search-button" id="search-button">SUBMIT</button>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+	<main>
+		<div class="news-container container flex" id="news-container"></div>		
+	</main>
+
+
+
+
+	<template id="template-news-card">
+		<div class="news">
+				<div class="news-header">
+					<img src="http://via.placeholder.com/400x200" alt="news-image" id="news-img">
+				</div>
+				<div class="news-content">
+					<h3 id="news-title">Title</h3>
+					<h6 class="news-source" id="news-source">Source</h6>
+					<p class="news-desc" id="news-desc">News Description</p>
+				</div>
+			</div>
+	</template>
+
+
+	<!--		
+	<footer>
+		<div class="footer-conatiner container ">
+			<div class="social-icon">
+				<a href=""><i class="fa-brands fa-facebook"></i></a>
+				<a href=""><i class="fa-brands fa-instagram"></i></a>
+				<a href=""><i class="fa-brands fa-twitter"></i></a>
+				<a href=""><i class="fa-brands fa-google-plus"></i></a>
+				<a href=""><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+			<div class="footer-nav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact Us</a></li>
+			</div>
+			<div class="footer-bottom">
+				<p>COPYRIGHT &COPY; 2023</p>
+				<p>Designed by: <span class="designer">ANUJ JOSHI</span></p>
+			</div>
+		</div>
+	</footer>
+-->
+	<script src="script.js"></script>
+</body>
+</html>
